@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  nicegui:
+    container_name: lunch_ass
+    env_file:
+      - .env
+    image: zauberzeug/nicegui:1.3.11
+    ports:
+      - 8080:8080
+    volumes:
+      - ./app:/app
